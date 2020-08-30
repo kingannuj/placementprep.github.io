@@ -1,0 +1,53 @@
+
+.bod{
+  background: #05090D;
+  color: #fff;
+}
+.head{
+  margin-top: 70px!important;
+  margin-bottom: 100px!important;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: #092532;
+}
+
+.head h1{
+  font-size: 3.5rem;
+  text-decoration: underline;
+  color: #fff;
+}
+.ques-sec p{
+  font-size: 1.4rem;
+  margin-left: 10px;
+  font-family: 'Alegreya', serif;
+}
+.btn{
+  margin-left: 50px;
+}
+.ques-sec button{
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 30px;
+  color: red;
+  background: black;
+  text-decoration: none;
+  width: 15%;
+
+}
+.inp{
+
+}
+.ques-sec h3{
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Amiri', serif;
+}
+.dem{
+  font-family: 'Alegreya', serif;
+  margin-left: 50px;
+}
+.new5{
+  margin-top: 10x;
+  border: 2px solid #900d0d;
+  border-radius: 20px;
+}

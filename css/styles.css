@@ -1,0 +1,657 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+p{
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #000;
+  word-spacing: 4px;
+}
+
+.extra-div h2{
+  font-size: 0.9rem;
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;;
+}
+h2{
+  font-size: 0.9rem;
+
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;;
+
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0)),  url("../images/imgg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path : rect(100% 0%,100% 77%,50% 100%,0 79%,0 0);
+  position: relative;
+
+}
+
+.header:before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  opacity: .2;
+  z-index: -1;
+  background: linear-gradient(to right,#1e6599 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.navbar:before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  opacity: .2;
+  z-index: -1;
+  background: linear-gradient(to right,#1e6599 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+
+.nav-item a{
+  color: #fff!important;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.header-section{
+  width: 100%;
+  height: inherit;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.center-div h1{
+  font-family: 'Merriweather', serif;
+
+}
+.center-div p{
+  font-family: 'Source Serif Pro', serif;
+}
+.center-div{
+  width: 100%;
+  font-weight: bold;
+
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+
+.header-buttons a{
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 5px 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.header-buttons a:hover{
+  color: #50d1c0;
+  background: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p{
+  font-size: 1.3rem;
+  padding: 10px 0 20px 0;
+  color: #fff;
+}
+.navbar-toggler{
+  z-index: 1;
+  display: block;
+  opacity: 1;
+
+}
+
+
+/* header css end here */
+
+
+/* card div css start */
+.card-div{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.card-div p{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1rem;
+}
+.card-div h2{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.3rem;
+}
+
+.extra-div{
+
+  opacity: .3s;
+  border: medium none;
+  margin-top: 100px;
+  padding: 60px!important;
+
+  border-radius: 3px;
+  transition: 0.3s;
+
+}
+
+.extra-div:hover{
+   background: #0F020E;
+   color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+  transform: translatey(10px);
+}
+.extra-div:hover p{
+  color: #fff;
+}
+
+/* .flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  padding: 2rem 4rem!important;
+} */
+
+/* card div css end here */
+
+/* Company css start here */
+
+.Company{
+  /* background: #07031a;#99A838 *//*#07031a*/
+  /* background: linear-gradient(210deg,#251526 50%,#68A838 50%); */
+  /* background: linear-gradient(210deg,#0F020E 55%,#035C1F 45%); */
+  background: linear-gradient(211deg,#03B472 50%,#0F020E 50%);
+  padding: 50px 0;
+  margin-bottom: 50px;
+  margin-top: -200px;
+  color: #fff;
+
+}
+.headings h1{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.Company-div{
+  text-align: center;
+  margin-top: 40px;
+  border: medium none;
+  height: auto;
+  padding: 50px!important;
+  border-radius: 3px;
+  transition: 0.3s;
+
+}
+.Company a img{
+
+  width: 65%;
+  height: 50%;
+  margin-bottom: 40px;
+  image-orientation: center;
+}
+.Company i{
+  margin: 10px 5px;
+}
+.Company p{
+    font-family: 'Merriweather', serif;
+  margin-bottom: 5px;
+  line-height: 1.2rem;
+  font-size: 1.3rem;
+}
+.Company h2{
+  margin-top: 5px;
+  color: black;
+}
+.Company-div:hover{
+background: #055C38;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+  transform: translatey(10px);
+  transition: 0.4s;
+}
+.Company-div h2{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.1rem;
+    color: #fff;
+}
+.Company-div p{
+font-family: 'Source Serif Pro', serif;
+font-size: 1rem;
+color: #fff;
+}
+/* Company css end here */
+
+
+/* Question done start */
+
+.Question{
+  margin: 100px 0;
+}
+.Question h1{
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+.question h1{
+  font-family: 'Source Serif Pro', serif;
+}
+.question p{
+  font-family: 'Source Serif Pro', serif;
+}
+
+/* .counter {
+  display: table-cell;
+  margin:1.5%;
+  font-size:50px;
+  background-color: #FF6F6F;
+  width:200px;
+  border-radius: 50%;
+  height:200px;
+  vertical-align: middle;
+} */
+/* Question start end */
+
+
+/* Topics css start */
+.Topic{
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  position: relative;
+}
+.Topic:before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+
+  z-index: -1;
+  /* background:#07031a; */
+  background: linear-gradient(205deg,#0F020E 50%,#03B472 50%);
+}
+.money{
+  font-size: 40px;
+  line-height: 1;
+  color: #606060
+}
+.card:hover{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+  transform: translateY(-20px);
+}
+.card-header{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #fff;
+  padding: 25px 0!important;
+}
+.card--body{
+  padding: 30px 0!important;
+}
+.card-body li{
+  font-family: 'Source Serif Pro', serif;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #606060;
+}
+.card-footer{
+  font-family: 'Merriweather', serif;
+  background: white!important;
+  padding: 30px 0!important;
+}
+.card-footer a{
+  border: 1px solid #50d1c0;
+  border-radius: 100px;
+  margin: 5px 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.card:hover .card-footer a{
+  color: #fff;
+  background: #50d1c0;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover .card-header, .card:hover .money{
+  color: #50d1c0;
+}
+.card-second{
+  /* box-shadow: 0 0 10px 0 rgba(0,0,0,0.3); */
+  transform: translateY(-20px);
+}
+.card-third{
+  /* box-shadow: 0 0 10px 0 rgba(0,0,0,0.3); */
+  transform: translateY(-20px);
+}
+/* Topic css end */
+
+
+/* Motivation css start */
+
+.motivation{
+  width: 100%;
+  height: 100vh;
+  padding: 80px 30px;
+
+
+}
+.box{
+  text-align: center;
+  border: 1px solid rgba(0,0,0,2);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,3);
+  border-radius: 2px;
+  transition: 0.3s ease;
+  margin-top: 30px;
+
+}
+.box:hover{
+  background: #0F020E;
+}
+.box:hover p{
+  color: #fff;
+}
+.box:hover h1{
+  color: #fff;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -60px!important;
+}
+.carousel-indicators li{
+  background-color: #16c9f6!important;
+}
+.box a{
+  position: relative;;
+}
+
+.box a img{
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.box a:after{
+  content: "\f10d";
+  font-family: FontAwesome;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to right,#1e6599 0%, #3ccdbb 0%, #16c9f6 100%);
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h1{
+    font-family: 'Source Serif Pro', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+
+}
+.cr-a{
+  background-color: #000;
+}
+
+.box h2{
+    font-family: 'Source Serif Pro', serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 20px;
+}
+.box p{
+    font-family: 'Source Serif Pro', serif;
+}
+/* Motivation css end */
+
+
+/* Doubt css start */
+
+
+.contact{
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0;
+  position: relative;
+  margin-top: 100px;
+
+}
+
+.contact:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* background:#07031a; */
+  background: linear-gradient(205deg,#0F020E 60%,#03B472 40%);
+  z-index: -1;
+}
+
+.form-btn button{
+
+  border: 1px solid #50d1c0;
+  border-radius: 100px;
+  margin: 5px 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  background: transparent;
+
+}
+
+form:hover .form-btn button{
+  background: #fff;
+  color: #50d1c0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,3);
+}
+
+::placeholder{
+  font-size: 0.85rem;
+}
+/* Doubt us css end */
+
+/* Doubt css start */
+.newsletter{
+  width: 100%;
+  height: auto;
+  margin: 80px auto;
+}
+
+.news-input{
+  border-radius: 100px 0 0 100px!important;
+  min-width: 150px;
+  min-height: 45px;
+}
+
+.sub-btn{
+  color: #fff;
+  background: #5bc0de;
+  border-radius: 0 100px 100px 0!important;
+  min-width: 130px;
+  min-height: 45px;
+}
+/* newsletter css end */
+
+
+/* footer css start */
+
+.footer-sec{
+  width: 100%;
+  height: auto;
+  padding: 70px 0 20px 0;
+  background: #0F020E;
+  position: relative;
+}
+
+.footer-sec p{
+  color: #fff;
+}
+
+.footer-sec li a{
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.footer-sec h3{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2rem!important;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+#myBtn{
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  color: #fff;
+  background: #00abff;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+#myBtn:hover{
+  background: #251f44;
+}
+
+ /* footer css end */
+@media (maz-width : 768px) {
+  .header-section{
+    height: 50px;
+  }
+}
+
+
+
+@media(max-width: 768px) {
+  .nav-item{
+    text-align: center!important;
+  }
+  .card-div {
+
+      width: auto;
+      height: auto;
+      text-align: center;
+      margin-top: 10px;
+      align-items: center;
+  }
+  .extra-div{
+
+    opacity: .3s;
+    border: medium none;
+    margin-top: auto;
+    padding: 70px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+
+  }
+
+  .Company{
+    /* background: #07031a;#99A838 *//*#07031a*/
+    /* background: linear-gradient(210deg,#251526 50%,#68A838 50%); */
+    /* background: linear-gradient(210deg,#0F020E 55%,#035C1F 45%); */
+    background: linear-gradient(211deg,#03B472 50%,#0F020E 50%);
+    padding: 50px 0;
+    margin-bottom: 50px;
+  margin-top: 0;
+    color: #fff;
+
+  }
+  .Topic{
+    height: auto;
+    margin-top: 50px;
+  }
+  .motivation{
+    height: auto;
+    margin-top: 50px;
+  }
+  .contact{
+    height: auto;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+  }
+
+  .form-btn button{
+    text-align: center;
+  }
+  .card-second{
+    transform: translateY(0px);
+    margin: 40px 0;
+  }
+  .footerdiv:nth-child(2){
+    text-align: left!important;
+  }
+  .footerdiv{
+    margin: 30px 0;
+  }
+}

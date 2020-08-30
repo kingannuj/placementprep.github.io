@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 14, 94);
+  }
+  .container
+  {
+      background-color:white;
+      margin-left: 190px;
+      margin-right: 190px;
+      border-radius: 20px;
+  }
+  .wrapper
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.timer
+{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; */
+
+}
+.time{
+    background-color: rgb(48, 14, 94) ;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 7rem;
+    color: white;
+}
+.timee{
+  font-size: 7rem;
+}
+.quiz
+{
+    box-sizing: content-box;
+    margin-top: 0px;
+    width: 60%;
+    padding: 40px;
+    height: 50%;
+    line-height: 1.5;
+    background-color: white;
+
+}
+.btn
+{
+   padding: 15px 40px;
+    color: white;
+    background-color: rgb(48, 14, 94);
+    border-radius: 30px;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.option_group{
+    list-style-type: none;
+    margin: 30px;
+}
+.option{
+    background-color:white;
+    width: 300px;
+    padding: 15px 35px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+
+}
+.option:hover{
+    cursor: pointer;
+    border: 2px solid rgb(48, 14, 94);
+    color:rgb(48, 14, 94);
+}
+.active{
+    background-color: rgb(48, 14, 94) ;
+    color: white !important;
+}
+.solution{
+    padding: 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .time {
+    background-color: rgb(48, 14, 94) ;
+
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 5rem;
+    color: white;
+  }
+  .option{
+      background-color:white;
+      width: 200px;
+      padding: 10px 35px;
+      margin-bottom: 18px;
+      border-radius: 30px;
+      border: 2px solid transparent;
+      display: block;
+  }
+  .quiz
+  {
+      box-sizing: content-box;
+      margin-top: 0px;
+      width: 60%;
+      padding: 40px;
+      height: 50%;
+      line-height: 2;
+      background-color: white;
+      font-size: 10px;
+
+  }
+  .option:hover{
+      cursor: pointer;
+      border: 2px solid rgb(48, 14, 94);
+      color:rgb(48, 14, 94);
+  }
+  .active{
+      background-color: rgb(48, 14, 94) ;
+      color: white !important;
+  }
+}

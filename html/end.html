@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 14, 94);
+  }
+  .wrapper
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+h3{
+    color: white;
+}
+.btn
+{
+   padding: 15px 35px;
+    color:  rgb(48, 14, 94);
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    margin-left: 82px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="end">
+        <br><br><br>
+    <img src="../images/award.jpg" height="300px" width="300px" >
+    <br><br><br>
+ <h3>WELL DONE YOU GOT <span class="points"></span> MARKS</h3><br>
+ <h3 class="time"> </h3>
+ <br><br><br>
+ <button class="btn" onclick=home()>Home</button>
+    </div>
+</div>
+    <script>
+
+        let point = sessionStorage.getItem("points");
+        let min = sessionStorage.getItem("minute");
+        let sec = sessionStorage.getItem("second");
+        if(point >0)
+        {
+        document.querySelector(".points").innerHTML=point;
+
+        }
+        else{
+            let v = document.querySelector("h3");
+            v.innerHTML = `<h3> YOU NEED MORE PRACTICE <br><br>YOU  GOT  LESS THEN 10 MARKS</h3>`;
+        }
+        document.querySelector(".time").innerHTML=` YOUR TEST COMPLETED IN  ${min}:${sec}`;
+        function home()
+        {
+            sessionStorage.removeItem("points");
+            sessionStorage.removeItem("minute");
+            sessionStorage.removeItem("second");
+            location.href="../index.html";
+        }
+    </script>
+</body>
+</html>
